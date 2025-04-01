@@ -3,8 +3,8 @@ body {
     font-size: 16px;
 }
 
-.header-wrapper {
-    height: 20vh;
+.first-screen {
+    max-height: 100vh;
 }
 
 .logo {
@@ -21,7 +21,7 @@ body {
     width: 80vw;
     align-items: center;
     font-size: 0.8em;
-    /* height: 10vh; */
+    max-height: 10vh;
 }
 
 .header-contacts {
@@ -69,16 +69,16 @@ a:hover {
 .menu {
     display: flex;
     flex-direction: row;
-    align-items: center;
     justify-content: space-around;
     width: 100%;
-    height: 10vh;
+    overflow: hidden;
     background-color: #F3FFE7;
 }
 
 .menu a {
     flex: 1;
     color: rgb(0, 0, 0);
+    padding: 15px 20px;
     font-size: 18px;
     transition: transform 0.3s ease, background-color 0.3s ease;
     text-align: center;
@@ -103,10 +103,48 @@ a:hover {
     left: 0;
     width: 50%;  
     height: 100%;  
-    background-color: rgba(0, 0, 0, 0.5); /* полупрозрачный черный */
+    background-color: rgba(255, 255, 255, 0.459); 
 }
+
 .main_screen-image {
     width: 100%;
     height: 100%;
     object-fit: cover;
+}
+
+.about-us {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    max-width: 50%;
+    height: 100%;
+    overflow: hidden;
+}
+
+@keyframes enlarge-title {
+    from {
+        transform: scale(1);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1.5);
+        opacity: 1;
+    }
+}
+
+.title {
+    font-family: "Lora", serif;
+    text-align: center;
+    max-width: 60%;
+    font-size: 1.5rem;
+    font-weight: 600;
+    animation: enlarge-title 1.5s ease-out forwards;
+    line-height: 1.5;
+}
+
+.title_experience {
+    color: #FFF300;
+    font-size: 3rem;
+    line-height: 0.5;
 }
