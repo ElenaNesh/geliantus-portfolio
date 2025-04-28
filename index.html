@@ -3,35 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex, nofollow">
+    <meta name="description" content="Проектирование в области лесного и паркового хозяйства. Экологические исследования, проектирование благоустройства, кадастр и геодезия. ООО Гелиантус - Санкт-Петербург.">
+    <meta name="keywords" content="Гелиантус, проектирование, лесное хозяйство, ландшафтная архитектура, Санкт-Петербург, кадастр, геодезия">
+    <meta name="author" content="ООО Гелиантус">
     <title>ООО "Гелиантус" - проектирование в области лесного и паркового хозяйства</title>
     <link rel="stylesheet" href="/normalize.css">
     <link rel="stylesheet" href="/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=PT+Serif+Caption:ital@0;1&family=Winky+Sans:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Lora:ital,wght@0,400..700;1,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=PT+Serif+Caption:ital@0;1&family=Winky+Sans:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="first-screen">
     <div class="header">
-        <img src="/logo.png" alt="Логотип ООО Гелиантус" class="logo">
+        <div class="header-logo">
+            <img src="/assets/geliantus_logo_transparent.png" alt="Логотип ООО Гелиантус" class="logo">
+            <span>ООО "ГЕЛИАНТУС"</span>
+        </div>
             <div class="header-contacts">
             <div class="header-phone">
-                <a href="tel:+79000847">
-                    <img src="/icons8-call-100.png" alt="иконка телефона" class="icons">
+                <a href="https://wa.me/7904600847" target="_blank">
+                    <img src="assets/icons8-whatsapp-100.png" alt="иконка телефона" class="icons">
                 </a>
                 <div class="header-text">
                     <h3>
-                        <a href="tel:+79000847">+79046000847</a>
+                        <a href="https://wa.me/79046000847" target="_blank">+79046000847</a>
                     </h3>
-                    <p>Телефон</p>
+                    <p>WhatsApp/Телефон</p>
                 </div>
             </div>
             <div class="header-mail">
                 <a href="mailto:geliantus2@yandex.ru">
-                    <img src="/icons8-mail-100.png" alt="Иконка почты" class="icons">
+                    <img src="assets/icons8-mail-100.png" alt="Иконка почты" class="icons">
                 </a>
                 <div class="header-text">
                     <h3>
@@ -42,7 +43,7 @@
             </div>
             <div class="header-location">
                 <a href="https://maps.app.goo.gl/S4bcg3MoKZ4b15459" target="_blank">
-                    <img src="/icons8-location-100.png" alt="Иконка адреса" class="icons">
+                    <img src="assets/icons8-location-100.png" alt="Иконка адреса" class="icons">
                 </a>
                 <div class="header-text">
                     <h3>
@@ -52,27 +53,240 @@
                 </div>
             </div>
         </div>
+        <div class="burger-menu">
+            <input type="checkbox" id="burger-toggle" />
+            <label for="burger-toggle" class="burger-icon">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+            <nav class="burger-nav">
+                <p></p>
+                <a href="#about-us-link">О НАС</a>
+                <a href="#services">УСЛУГИ</a>
+                <a href="#partners-title">НАШИ ПАРТНЕРЫ</a>
+                <a href="#customers-title">НАШИ ЗАКАЗЧИКИ</a>
+                <a href="#contacts_title">КОНТАКТЫ</a>
+            </nav>
+        </div>
     </div>
 
 <nav class="menu">
-    <a href="#">О НАС</a>
-    <a href="#">УСЛУГИ</a>
-    <a href="#">НАШИ ПАРТНЕРЫ</a>
-    <a href="#">СОТРУДНИКИ</a>
-    <a href="#">КОНТАКТЫ</a>
+    <a href="#about-us-link">О НАС</a>
+    <a href="#services">УСЛУГИ</a>
+    <a href="#partners-title">НАШИ ПАРТНЕРЫ</a>
+    <a href="#customers-title">НАШИ ЗАКАЗЧИКИ</a>
+    <a href="#contacts_title">КОНТАКТЫ</a>
 </nav>
-
 
 <div class="main_screen">
     <div class="about-us">
-        <p class="title">Более <span class="title_experience">15 лет</span> помогаем своим клиентам решать задачи в области лесного и лесопаркового хозяйства</p>
+        <h1 class="title">Более <span class="title_experience">15 лет</span> решаем задачи клиентов в области лесного и лесопаркового хозяйства</h1>
+        <a href="#services" class="btn-more">Подробнее</a>
     </div>
-    <img src="/geliantus-forest.avif" alt="Изображение соснового леса" class="main_screen-image">
+    <img src="assets/geliantus-forest.avif" alt="Изображение соснового леса" class="main_screen-image">
+    <a href="https://spbftu.ru/" class="main_screen-ribbon" target="_blank" rel="noopener noreferrer">
+        <div class="main_screen-ribbon-content">
+            <span>Основан в 2010 году при участии</span>
+            <img src="/assets/LTU.png" alt="">
+        </div>
+    </a>
 </div>
     </div>
-    <div class="second-screen">
-
+    <div class="about-us_screen" id="about-us-link">
+        <div class="about-us-section">
+            <h3 class="about-us-section_title">О НАС</h3>
+        </div>
+            <div class="about-us-section_text">
+                <p>Мы — ООО «Гелиантус», инновационно-технический центр, расположенный в Санкт-Петербурге. 
+                Наша компания специализируется на проектировании в лесном хозяйстве и ландшафтной архитектуре,
+                предоставляя широкий спектр услуг:</p>
+                <ul>
+                    <li>Экологические исследования​</li>
+                    <li>Лесоводственные изыскания</li>
+                    <li>Ботанические исследования​</li>
+                    <li>Проектирование объектов ландшафтной архитектуры​</li>
+                    <li>Почвенные исследования​</li>
+                    <li>Мелиоративные проекты​</li>
+                </ul>
+                <p>Наши высококвалифицированные специалисты имеют богатый опыт работы в различных регионах России, включая Ленинградскую, Мурманскую, Архангельскую, Новгородскую, Тверскую и Псковскую области. Если вы ищете профессионалов в области лесного хозяйства и ландшафтной архитектуры, которые обеспечат высокое качество и надежность выполнения работ, мы будем рады сотрудничать с вами!</p>
+            </div>
     </div>
+    <div class="second-screen">
+        <h3 class="services" id="services">УСЛУГИ</h3>
+        <div class="second-screen_services-wrapper">
+            <div class="second-screen_services-wrapper_service">
+                <img src="/assets/Лес.jpg" alt="фото проектирования зеленых насаждений">
+                <div class="second-screen_services-wrapper_service_text">
+                    <h3>Зеленые насаждения:</h3>
+                    <ul>
+                        <li>Паспортизация зеленых насаждений</li>
+                        <li>Инвентаризация зеленых насаждений,  в том числе на объектах культурного наследия</li>
+                        <li>Получение Акта сноса зеленых насаждений</li>
+                        <li>Ландшафтно-архитектурное обследование</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="second-screen_services-wrapper_service">
+                <img src="/assets/Проект2.jpg" alt="фото проектирования участков">
+                <div class="second-screen_services-wrapper_service_text">
+                    <h3>Проектирование: </h3>
+                    <ul>
+                        <li>Схема планировочной организации земельного участка</li>
+                        <li>Проект благоустройства территории</li>
+                        <li>Дендроплан</li>
+                        <li>Проект полосы отвода линейного объекта</li>
+                        <li>Комплексное проектирование парков, скверов, рекреационных зон, ООПТ</li>
+                        <li>Проект Рекультивации</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="second-screen_services-wrapper_service">
+                <img src="/assets/Проект3.jpg" alt="фото лесоустроительного проектирования">
+                <div class="second-screen_services-wrapper_service_text">
+                    <h3>Лесоустроительное проектирование: </h3>
+                    <ul>
+                        <li>Проекты освоения лесов</li>
+                        <li>Проектная документация лесных участков</li>
+                        <li>Лесопатологическое обследование</li>
+                        <li>Материально-денежная оценка лесного участка</li>
+                        <li>Акты натурного обследования лесных участков</li>
+                        <li>Разработка лесного плана</li>
+                        <li>Разработка регламентов ООПТ</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="second-screen_services-wrapper_service">
+                <img src="/assets/ОКН1.jpg" alt="фото проектирования объектов культурного наследия">
+                <div class="second-screen_services-wrapper_service_text">
+                    <h3>Объекты культурного наследия: </h3>
+                    <ul>
+                        <li>Приспособление объекта культурного наследия (ОКН) для современного использования</li>
+                        <li>Историко-культурная экспертиза</li>
+                        <li>Ландшафтные изыскания</li>
+                        <li>Опорный план</li>
+                        <li>Заключение о соответствии требованиям Закона Санкт-Петербурга № 820-7</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="second-screen_services-wrapper_service">
+                <img src="/assets/Геодез1.jpg" alt="фото геодезия и кадастр">
+                <div class="second-screen_services-wrapper_service_text">
+                    <h3>Геодезия и кадастр: </h3>
+                    <ul>
+                        <li>Проект межевания территории</li>
+                        <li>Межевой план земельного участка</li>
+                        <li>Схема размещения земельного участка на кадастровом плане территории</li>
+                        <li>Инженерно-геодезические изыскания, подеревная топосъемка</li>
+                        <li>Кадастровые работы на линейных объектах</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="second-screen_services-wrapper_service">
+                <img src="/assets/Эко1.jpeg" alt="фото экологического проектирования">
+                <div class="second-screen_services-wrapper_service_text">
+                    <h3>Экологическое проектирование: </h3>
+                    <ul>
+                        <li>Раздел «Оценка воздействия на окружающую среду»</li>
+                        <li>Геоботаническое обследование и обследование на Краснокнижные виды</li>
+                        <li>Проект нормативов образования отходов и лимитов на их размещение (ПНООЛР)</li>
+                        <li>Проект предельно допустимых выбросов в атмосферный воздух (ПДВ)</li>
+                        <li>Проект санитарно-защитной зоны</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="partners">
+        <h3 class="partners-title" id="partners-title">НАШИ ПАРТНЕРЫ</h3>
+        <div class="partners_wrapper">
+            <img class="partners_wrapper_img" src="/assets/LTU.png" alt="Санкт-Петербургский государственный лесотехнический университет имени С.М. Кирова">
+            <img class="partners_wrapper_img" src="/assets/БинРАН.jpg" alt="Ботанический институт им. В. Л. Комарова РАН">
+            <img class="partners_wrapper_img" src="/assets/principnovo.jpg" alt="Группа компаний «Принцип Ново»">
+            <img class="partners_wrapper_img" src="/assets/Техноватор.jpg" alt="Компания «ТехНоватор»">
+            <img class="partners_wrapper_img" src="/assets/СЗН2.svg" alt="Компания «Сервис Зеленых Насаждений»">
+            <img class="partners_wrapper_img" src="/assets/ИС1.png" alt="Центр комплексного проектирования Информационные системы">
+        </div>
+    </div>
+    <div class="customers">
+        <h3 class="customers-title" id="customers-title">НАШИ ЗАКАЗЧИКИ</h3>
+        <div class="customers_wrapper">
+            <img class="customers_wrapper_img" src="/assets/2.Водоканал.png" alt="ГУП Водоканал Санкт-Петербурга">
+            <img class="customers_wrapper_img" src="/assets/2. Гатчина.jpg" alt="Государственный музей-заповедник «Гатчина»">
+            <img class="customers_wrapper_img" src="/assets/2. Титан-2.jpg" alt="КОНЦЕРН ТИТАН-2">
+            <img class="customers_wrapper_img" src="/assets/2. ЦПКиО.jpg" alt="Центральный парк культуры и отдыха им. Кирова">
+            <img class="customers_wrapper_img" src="/assets/2. Юамет.jpg" alt="Компания «ЮАМЕТ»">
+            <img class="customers_wrapper_img" src="/assets/hermitage.png" alt="Государственный Эрмитаж">
+            <img class="customers_wrapper_img" src="/assets/2.loesk.png" alt="АО «ЛОЭСК»">
+            <img class="customers_wrapper_img" src="/assets/RBI.jpg" alt="Девелоперская компания RBI">
+        </div>
+    </div>
+    <div class="contacts">
+        <h3 class="contacts-title" id="contacts_title">КОНТАКТЫ</h3>
+        <div class="contacts_wrapper">
+            <div class="contact_wrapper_left">
+                <div class="contact_wrapper_left_item">
+                    <img src="/assets/icons8-location-100.png" alt="иконка адреса">
+                    <div class="contact_wrapper_left_item_text">
+                        <span>Физический адрес: </span>
+                        <p>г. Санкт-Петербург, Институтский пер., 3Е</p>
+                    </div>
+                </div>
+                <div class="contact_wrapper_left_item">
+                    <img src="/assets/icons8-whatsapp-100.png" alt="иконка телефона">
+                    <div class="contact_wrapper_left_item_text">
+                        <span>WhatsApp/Телефон: </span>
+                        <p>+79046000847</p>
+                    </div>
+                </div>
+                <div class="contact_wrapper_left_item">
+                    <img src="/assets/icons8-mail-100.png" alt="иконка почты">
+                    <div class="contact_wrapper_left_item_text">
+                        <span>Email: </span>
+                        <p>geliantus2@yandex.ru</p>
+                    </div>
+                </div>
+            </div>
+            <div class="contact_wrapper_right">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6690.4714945385385!2d30.333994070451073!3d59.99049467728086!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x469633f2504e11f3%3A0xfecb4cfdf48ca8fe!2z0JjQvdGB0YLQuNGC0YPRgtGB0LrQuNC5INC_0LXRgC4sIDMsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQoNC-0YHRgdC40Y8sIDE5NDE1Ng!5e0!3m2!1sru!2str!4v1745313922605!5m2!1sru!2str" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
 
+        </div>
+    </div>
+    <footer>
+        <div class="footer-wrapper">
+            <div>
+                <h3>ООО "ГЕЛИАНТУС"</h3>
+                <div class="footer-wrapper_item">
+                    <span>Юридический адрес:</span>
+                    <p>194044, город Санкт-Петербург, пер. Зеленков, д. 7а литер з, помещ. 5-н, офис 142</p>
+                </div>
+                <div class="footer-wrapper_item">
+                    <span>Физический адрес: </span>
+                    <p>г. Санкт-Петербург, Институтский пер., 3Е</p>
+                </div>
+            </div>
+            <div>
+                <div class="footer-wrapper_item">
+                    <span>Реквизиты организации: </span>
+                    <p>ИНН 7802723776</p>
+                    <p>КПП 780201001</p>
+                    <p>ОГРН 1107847285721</p>
+                </div>
+            </div>
+            <div>
+                <div class="footer-wrapper_item">
+                    <span>WhatsApp/Телефон: </span>
+                    <p>+79046000847</p>
+                </div>
+                <div class="footer-wrapper_item">
+                    <span>Email: </span>
+                    <p>geliantus2@yandex.ru</p>
+                </div>
+            </div>
+        </div>
+        <p style="text-align: center;">© <span id="current-year"></span> ООО "Гелиантус". Благоустройство, лесное хозяйство, геодезия.</p>
+    </footer>
+    <script src="/main.js"></script>
 </body>
 </html>
