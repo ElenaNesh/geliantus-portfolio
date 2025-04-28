@@ -692,6 +692,9 @@ footer img {
     .footer-wrapper {
         width: 90vw;
     }
+    .footer-wrapper h3 {
+        margin-top: 20px;
+    }
 }
 
 @media (max-width: 500px) {
