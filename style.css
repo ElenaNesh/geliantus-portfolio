@@ -238,7 +238,9 @@ a:hover {
     font-size: 1rem;
     border-radius: 5px;
     animation: enlarge-title 1.5s ease-out forwards;
-    margin-top: 2rem;}
+    margin-top: 4rem;
+    margin-bottom: -30px;
+}
 
 .about-us-section {
     position: relative;
@@ -695,6 +697,14 @@ footer img {
     .footer-wrapper h3 {
         margin-top: 20px;
     }
+}
+
+@media (max-width: 580px) {
+    .title {
+        max-width: 60%;
+        line-height: normal;
+    }
+    
 }
 
 @media (max-width: 500px) {
