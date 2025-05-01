@@ -766,3 +766,15 @@ footer img {
         font-size: 18px;
     }
 }
+
+@media (max-height: 500px) {
+    .title {
+        max-width: 40%;
+        line-height: 1.2;
+        font-size: 1rem;
+    }
+
+    .btn-more {
+        margin-bottom: -10px;
+    }
+}
