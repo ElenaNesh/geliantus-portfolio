@@ -35,3 +35,11 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 });
+
+document.querySelectorAll('.about-us-section_spoiler-toggle').forEach(button => {
+    button.addEventListener('click', () => {
+        const content = button.nextElementSibling;
+        button.classList.toggle('open');
+        content.style.display = content.style.display === 'block' ? 'none' : 'block';
+    });
+});

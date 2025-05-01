@@ -266,6 +266,54 @@ a:hover {
     line-height: 1.5rem;
 }
 
+.about-us-section_text-main {
+    text-align: center;
+}
+
+.btn_check-license {
+    padding: 5px 10px;
+    background-color: #00962E;
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    border-radius: 5px;
+    display: inline-block;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+    max-width: 90vw;
+    overflow: hidden;            
+    text-overflow: ellipsis;     
+    box-sizing: border-box;      
+}
+
+
+.about-us-section_spoiler-toggle {
+    background: none;
+    border: none;
+    cursor: pointer;
+    text-align: left;
+    padding: 0.5rem;
+    transition: all 0.3s ease;
+}
+
+.about-us-section_spoiler-toggle:hover {
+    background-color: #00962E;
+    color: white;
+    border-radius: 5px;
+}
+
+.about-us-section_spoiler-toggle.open::before{
+    content: " ▶ Скрыть ";
+}
+
+.about-us-section_spoiler-toggle::before {
+    content: " ▼ Открыть ";
+}
+
+.about-us-section_spoiler-content {
+    display: none;
+}
+
 .services {
     padding: 30px 0 30px 0;
     background-color: #F3FFE7;
